@@ -2,13 +2,13 @@ public class Employee {
 
     private static int idNextValue = 0;
 
-    private int emplId;
+    private int id;
     private String fullNameEmpl;
     private int department;
     private double salary;
 
     public int getEmplId() {
-        return emplId;
+        return id;
     }
 
     public String getFullNameEmpl() {
@@ -27,7 +27,7 @@ public class Employee {
 
     public Employee(String fullNameEmpl, int department, double salary) {
         idNextValue++;
-        this.emplId = idNextValue;
+        this.id = idNextValue;
         this.fullNameEmpl = fullNameEmpl;
         this.department = department;
         this.salary = salary;
@@ -46,7 +46,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "emplId=" + emplId +
+                "emplId=" + id +
                 ", fullNameEmpl='" + fullNameEmpl + '\'' +
                 ", department=" + department +
                 ", salary=" + salary +

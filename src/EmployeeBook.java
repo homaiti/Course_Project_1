@@ -19,7 +19,7 @@ public class EmployeeBook {
     //Удаление сотрудника
     public void delEmpl(String emplName) {
         for (int i = 0; i < empl.length; i++) {
-            if (empl[i].getFullNameEmpl().equals(emplName)) {
+            if (empl[i] != null && empl[i].getFullNameEmpl().equals(emplName)) {
                 System.out.println(empl[i].getFullNameEmpl() + " удален");
                 empl[i] = null;
                 return;
